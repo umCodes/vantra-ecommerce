@@ -1,0 +1,19 @@
+.cart-count{
+}
+
+
+.cart-count::after{
+    content: attr(data-count);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    width: 2px;
+    height: 2px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: -30%;
+    right: -50%;
+}
