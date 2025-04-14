@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Profile from "./pages/Profile";
 import Product from "./pages/Product";
 import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+import Login from "./pages/LogIn";
 import Checkout from "./pages/Checkout";
 
 
