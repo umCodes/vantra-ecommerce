@@ -7,7 +7,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 function ProductsList({ products }) {
   const [items, setProducts, isLoading] = useContext(ProductsContext); // [products, setProducts, isLoading]
 
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <div className="h-full flex items-center justify-center text-2xl text-gray-500">
         <FontAwesomeIcon icon={faSpinner} spin className="mr-2" />
