@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function ProductsList({ products }) {
-  const [products, setProducts, isLoading] = useContext(ProductsContext); // [products, setProducts, isLoading]
+  const [items, setProducts, isLoading] = useContext(ProductsContext); // [products, setProducts, isLoading]
 
   if (isLoading) {
     return (
