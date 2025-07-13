@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 import { ProductsContext } from "../context/ProductsProvider";
 
 function ProductsList({ products }) {
-  const [ isLoading ] = useContext(ProductsContext); // Get products from context
+  const [ _, _, isLoading ] = useContext(ProductsContext); // Get products from context
 
 
     if(isLoading){
