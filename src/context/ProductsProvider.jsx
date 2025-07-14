@@ -13,7 +13,7 @@ const ProductsProvider = ({children}) => {
                   setIsLoading(true)
                   const response = await fetch('https://vantra-products-api.onrender.com/')
                   const data = await response.json()
-                  setProducts(data);
+                  setProducts(setTimeout(() => data, 2000));
                 setIsLoading(false)
                 }catch(error){
                   console.error("error occured fetching products: ", error);
