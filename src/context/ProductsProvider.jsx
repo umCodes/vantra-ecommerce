@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react"
 export const ProductsContext = createContext();
 
 const ProductsProvider = ({children}) => {        
-        const [products, setProducts] = useState(null);
+        const [products, setProducts] = useState([]);
         const [isLoading, setIsLoading] = useState(false);
         
         useEffect(() =>{
