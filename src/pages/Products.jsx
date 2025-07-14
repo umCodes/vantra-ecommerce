@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+ import { useContext, useState } from "react"
 import ProductsList from "../components/ProductsList"
 import DropDown from "../components/DropDown"
 import { ProductsContext } from "../context/ProductsProvider"
@@ -26,7 +26,7 @@ function Products() {
 
  
     
-    if (products){ 
+    
         
         const sortedProducts =    products
         .sort(sortTypes[sortby])
@@ -48,8 +48,6 @@ function Products() {
             return product.price <= currPrice && product.rating.rate >= currRating && filterCondition 
     
         });  
-        
-    
         
         
         
@@ -92,7 +90,7 @@ function Products() {
                 </div>
             </div>
         )
-    }
+    
 }
 
 export default Products
