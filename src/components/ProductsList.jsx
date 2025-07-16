@@ -11,7 +11,6 @@ function ProductsList({ products }) {
     return (
       <div className="h-full flex items-center justify-center text-2xl text-gray-500">
         <FontAwesomeIcon icon={faSpinner} spin className="mr-2" />
-        Loading products...
       </div>
     );
   }
